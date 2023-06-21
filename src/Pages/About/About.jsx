@@ -1,11 +1,13 @@
-//import Banner
+import React from "react"
 import Collapse from "../../Components/Collapse/Collapse"
 import './About.css'
+import Banner from '../../Components/Banner/Banner';
+
 
 function About() {
     return (
         <main role="main">
-      
+      <Banner />
       <section className="about-section">
         <h2 className="visually-hidden">À propos</h2>
         <Collapse

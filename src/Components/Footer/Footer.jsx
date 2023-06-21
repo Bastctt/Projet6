@@ -5,7 +5,7 @@ import logo from "../../assets/images/logo-footer.svg"
 function Footer() {
   return (
     <footer className="footer">
-        <img src={logo} alt="Logo Kasa" className="img" /> 
+        <img src={logo} alt="Logo Kasa" className="img-footer" /> 
         <p className="kasaRight">© 2023 Kasa. All rights reserved</p>
     </footer>
   );

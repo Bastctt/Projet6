@@ -43,7 +43,7 @@
   
   /* Animations */
   .collapse.open > .containerText {
-    animation: open 600ms;
+    animation: open 600ms ease-in-out;
   }
   
   .collapse.close .containerText {
