@@ -9,7 +9,7 @@ function Header() {
       <img className="img-kasa" src={logo} alt="Logo de Kasa" title="Logo de Kasa" />
       <nav role="navigation" aria-label="main navigation">
         <ul className="ul-nav">
-          <li className="li-nav"><Link className="a-nav" to="/">Accueil</Link></li>
+          <li className="li-nav"><Link className="a-nav" to="/home">Accueil</Link></li>
           <li className="li-nav"><Link className="a-nav" to="/about">À Propos</Link></li>
         </ul>
       </nav>
