@@ -7,7 +7,7 @@
 }
 /* Logo Kasa */
 .img-kasa {
-    width: 18%;
+    width: 17%;
 }
 /* Navigation enter les pages */
 .ul-nav {
@@ -19,8 +19,31 @@
     font-size: 1.3em;
     margin-left: 45px;
 }
+.a-nav{
+    display: inline-block;
+    position: relative;
+    transition: 0.4s all ease;
+    color: #FF6060;
+}
 .a-nav:hover {
-    text-decoration: underline;
+    color: #FF6060;
+    transition: 0.4s all ease;
+}
+.a-nav::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+    background-color: #FF6060;
+}
+.a-nav:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 @media (max-width: 576px) {
