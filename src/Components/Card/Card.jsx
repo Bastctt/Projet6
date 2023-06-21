@@ -1,12 +1,12 @@
-import styles from "./Card.css"
+import "./Card.css"
 import { Link } from "react-router-dom"
 
 function Card({ id, cover, title }) {
     return (
-        <article className={styles.article}>
-            <Link to={`/accommodation/${id}`}>
-                <img className={styles.img} src={cover} alt={title} title={title} />
-                <h3 className={styles.title}>{title}</h3>
+        <article className="article-card">
+            <Link to={`/Hébergements/${id}`}>
+                <img className="img-card" src={cover} alt={title} title={title} />
+                <h3 className="title-card">{title}</h3>
             </Link>
         </article>
     )
