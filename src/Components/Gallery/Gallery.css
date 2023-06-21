@@ -1,0 +1,25 @@
+.gallery-appartements {
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+@media (max-width: 992px) {
+    .gallery-appartements {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-appartements {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        padding: 0;
+        background-color: inherit;
+        gap: 15px;
+    }
+}

@@ -6,6 +6,7 @@
     position: absolute;
     bottom: 43%;
     font-weight: 500;
+    cursor: default;
 }
 
 @media (max-width: 576px) {
