@@ -3,21 +3,21 @@ import Card from "../../Components/Card/Card"
 import datas from "../../Datas/Hébergements.json"
 
 function Gallery() {
-    return ( datas && datas.length>0 && (
-        <section aria-label="Galerie appartements" className="gallery-appartements">
-            {datas.map(data => {
-                return (
+    if (datas && datas.length > 0) {
+        return (
+            <section aria-label="Galerie appartements" className="gallery-appartements">
+                {datas.map(data => (
                     <Card
                         key={data.id}
                         id={data.id}
                         title={data.title}
                         cover={data.cover}
                     />
-                )
-                
-            })}
-        </section>
-    ))
+                ))}
+            </section>
+        );
+    }
+    return null;
 }
 
-export default Gallery
+export default Gallery;
