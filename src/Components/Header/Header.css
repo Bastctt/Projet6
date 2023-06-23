@@ -57,9 +57,9 @@
 
     .li-nav {
         margin-left: 25px;
-    font-size: 0.7em;
-    text-transform: uppercase;
-    /* gap: 10px; */
-    margin-right: 10px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        margin-right: 10px;
+        padding-top: 5px;
     }
 }

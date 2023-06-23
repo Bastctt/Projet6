@@ -4,7 +4,7 @@ import bannerAbout from '../../assets/images/banner-about.svg';
 import bannerHome from '../../assets/images/banner-home.svg';
 
 function Banner({ children }) {
-  const bannerImage = window.location.hash.substring(1).toString() === "/about" ? bannerAbout : bannerHome;
+  const bannerImage = window.location.pathname === "/about" ? bannerAbout : bannerHome;
   const classNameBanner = bannerImage === bannerHome ? 'banner bannerHome' : 'banner';
 
   return (
@@ -16,6 +16,7 @@ function Banner({ children }) {
 }
 
 export default Banner;
+
 
 
   

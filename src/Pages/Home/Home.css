@@ -1,42 +1,13 @@
 .div-home {
-    color: white;
-    font-size: 2em;
-    text-align: center;
-    position: absolute;
-    bottom: 43%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: 500;
-    cursor: default;
-    overflow: hidden; /* Empêche le texte de dépasser le conteneur */
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    animation: typing 4s steps(40, end);
-  }
-  
-  .div-home::after {
-    content: "|";
-    animation: blink-caret .75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink-caret {
-    from,
-    to {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-  
+  color: white;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 43%;
+  font-weight: 500;
+}
+
 @media (max-width: 576px) {
     .div-home {
         font-size: 1.7em;

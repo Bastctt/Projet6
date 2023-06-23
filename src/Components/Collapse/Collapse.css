@@ -41,7 +41,7 @@
   font-size: 1.3em;
 }
 
-/* Animations */
+/* Animations ouverture fermeture collapse */
 .collapse.open > .containerText {
   animation: open 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
