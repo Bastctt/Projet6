@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import Hébergements from '../../Pages/Hébergement/Hébergements'
 import Home from '../../Pages/Home/Home'
 import About from '../../Pages/About/About'
 import Error from '../../Pages/Error/Error'
@@ -13,16 +13,13 @@ function App() {
         <BrowserRouter>
             <Header/>
             <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/Hébergements/:id" element={<Hébergements />} errorElement={<Error />} />
             <Route path="*" element={<Error />} />
-            
-            
             </Routes>
-            
             <Footer/>
         </BrowserRouter>
-        
     )
 }
 

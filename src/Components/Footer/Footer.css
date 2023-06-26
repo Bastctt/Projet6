@@ -2,6 +2,7 @@
     background-color: black;
     color: white;
     text-align: center;
+    cursor: default;
   }
 .img-footer {
     padding-top: 45px;
