@@ -4,19 +4,21 @@ import "./Hebergements.scss";
 import Slide from "../../Components/Slide/Slide";
 import datas from "../../Datas/hebergement.json";
 import Collapse from "../../Components/Collapse/Collapse";
+import Error from "../../Pages/Error/Error";
 
-function Hébergements() {
+function Hebergements() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const dataHebergement = datas.find(data => data.id === id);
+  const dataHebergement = datas.find((data) => data.id === id);
 
   useEffect(() => {
-    if (!dataHebergement) {
-      navigate("/error");
-    }
     window.scrollTo(0, 0);
   }, [dataHebergement, navigate]);
+
+  if (!dataHebergement) {
+    return <Error />;
+  }
 
   const createTags = () =>
     dataHebergement.tags.map((tag, index) => (
@@ -78,4 +80,4 @@ function Hébergements() {
   );
 }
 
-export default Hébergements;
+export default Hebergements;
