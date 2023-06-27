@@ -1,8 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import "./Hébergements.scss";
+import "./Hebergements.scss";
 import Slide from "../../Components/Slide/Slide";
-import datas from "../../Datas/Hébergements.json";
+import datas from "../../Datas/hebergement.json";
 import Collapse from "../../Components/Collapse/Collapse";
 
 function Hébergements() {

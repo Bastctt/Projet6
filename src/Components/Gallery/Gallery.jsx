@@ -1,6 +1,6 @@
 import "./Gallery.scss"
 import Card from "../../Components/Card/Card"
-import datas from "../../Datas/Hébergements.json"
+import datas from "../../Datas/hebergement.json"
 
 function Gallery() {
     if (datas && datas.length > 0) {
