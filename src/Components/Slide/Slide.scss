@@ -1,0 +1,93 @@
+.carousel {
+    width: 100%;
+    height: 415px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  
+    .slideImg {
+      width: 100%;
+      height: 415px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 25px;
+    }
+  
+    .counterSlide {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color: white;
+      bottom: 25px;
+      font-weight: 400;
+    }
+  
+    /* Flèches */
+    .arrowSlide {
+      color: white;
+      cursor: pointer;
+      padding: 50px;
+      font-size: 6em;
+    }
+  
+    .buttonSlide {
+      position: absolute;
+      z-index: 50;
+      border: none;
+      background-color: inherit;
+    }
+  
+    .arrowLeft {
+      left: 0;
+    }
+  
+    .arrowRight {
+      right: 0;
+    }
+  
+    /* Animations */
+    .slideImg[animation="0"] {
+      animation: changeSlide1 1200ms;
+    }
+  
+    .slideImg[animation="1"] {
+      animation: changeSlide2 1200ms;
+    }
+  
+    @media (max-width: 576px) {
+      height: 255px;
+  
+      .slideImg {
+        height: 255px;
+        border-radius: 10px;
+      }
+  
+      .arrowSlide {
+        padding: 30px;
+        font-size: 3em;
+      }
+  
+      .counterSlide {
+        display: none;
+      }
+    }
+  
+    @keyframes changeSlide1 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    @keyframes changeSlide2 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  

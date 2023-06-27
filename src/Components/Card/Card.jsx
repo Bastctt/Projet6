@@ -1,15 +1,15 @@
-import "./Card.css"
+import "./Card.scss"
 import { Link } from "react-router-dom"
 
 function Card({ id, cover, title }) {
     return (
-        <article className="article-card">
+        <article>
             <Link to={`/Hébergements/${id}`}>
-                <img className="img-card" src={cover} alt={title} title={title} />
-                <h3 className="title-card">{title}</h3>
+                <img src={cover} alt={title} title={title} />
+                <h3>{title}</h3>
             </Link>
         </article>
     )
 }
 
-export default Card
+export default Card;

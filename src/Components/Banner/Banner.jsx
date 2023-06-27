@@ -1,5 +1,5 @@
 import React from 'react';
-import './Banner.css';
+import './Banner.scss';
 import bannerAbout from '../../assets/images/banner-about.svg';
 import bannerHome from '../../assets/images/banner-home.svg';
 
@@ -9,7 +9,7 @@ function Banner({ children }) {
 
   return (
     <section aria-label="Bannière" className={classNameBanner}>
-      <img className="img-banner" src={bannerImage} alt="Bannière - Paysage" title="Bannière - Paysage" />
+      <img src={bannerImage} alt="Bannière - Paysage" title="Bannière - Paysage" />
       {children}
     </section>
   );

@@ -1,6 +1,6 @@
 import React from "react"
 import Collapse from "../../Components/Collapse/Collapse"
-import './About.css'
+import './About.scss'
 import Banner from '../../Components/Banner/Banner';
 
 

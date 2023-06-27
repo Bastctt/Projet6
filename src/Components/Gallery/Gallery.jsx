@@ -1,4 +1,4 @@
-import "./Gallery.css"
+import "./Gallery.scss"
 import Card from "../../Components/Card/Card"
 import datas from "../../Datas/Hébergements.json"
 

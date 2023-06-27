@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Slide.css";
+import "./Slide.scss";
 
 function Slide({ pictures, title }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,7 +13,7 @@ function Slide({ pictures, title }) {
   };
 
   return (
-    <div className="carrousselSlide">
+    <div className="carousel">
       {pictures.length > 0 && (
         <>
           <button
@@ -45,5 +45,5 @@ function Slide({ pictures, title }) {
   );
 }
 
-export default Slide
+export default Slide;
 
