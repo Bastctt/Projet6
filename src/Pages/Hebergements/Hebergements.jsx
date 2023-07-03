@@ -45,7 +45,7 @@ function Hebergements() {
   return (
     dataHebergement && (
       <main role="main" className="mainAppart">
-        <section aria-label="Carroussel">
+        <section aria-label="Carousel">
           <Slide pictures={dataHebergement.pictures} title={dataHebergement.title} />
         </section>
         <section aria-label="Informations principales" className="introductionAppart">

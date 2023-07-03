@@ -12,9 +12,11 @@ function Slide({ pictures, title }) {
     setCurrentIndex(currentIndex === pictures.length - 1 ? 0 : currentIndex + 1);
   };
 
+  const shouldDisplayNavigation = pictures.length > 1;
+
   return (
     <div className="carousel">
-      {pictures.length > 0 && (
+      {shouldDisplayNavigation && (
         <>
           <button
             aria-label="Image précédente"
@@ -41,9 +43,16 @@ function Slide({ pictures, title }) {
           </button>
         </>
       )}
+      {!shouldDisplayNavigation && (
+        <img
+          className="slideImg"
+          src={pictures[currentIndex]}
+          alt={title}
+          title={title}
+        />
+      )}
     </div>
   );
 }
 
 export default Slide;
-
