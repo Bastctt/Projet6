@@ -7,7 +7,7 @@ import Error from '../../Pages/Error/Error'
 function RoutesConfig() {
     return(
         <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="*" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/hebergement/:id" element={<Hebergements />} errorElement={<Error />} />
