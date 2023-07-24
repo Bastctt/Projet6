@@ -1,6 +1,6 @@
 # Kasa
 
-Projet numéro 6 de la formation Développeur Web OpenClassrooms
+Projet numéro 6 de la formation Développeur Web OpenClassRooms
 
 ![Kasa](/src/assets/images/D_Fiche-Logement.png)
 
